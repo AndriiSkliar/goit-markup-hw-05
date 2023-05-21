@@ -78,8 +78,9 @@ body {
   color: var(--header-color);
 }
 
-.current-page {
+a.current-page {
   position: relative;
+  color: var(--btn-color);
 }
 
 .current-page::after {
@@ -102,6 +103,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--header-color);
+  font-weight: 500;
 }
 
 .nav-link:hover,
@@ -351,10 +354,6 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-}
-
-.caption,
-.nav-link {
   color: var(--header-color);
   font-weight: 500;
 }
@@ -392,7 +391,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: var(--transition-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:focus,
@@ -563,7 +563,8 @@ body {
   padding: 12px 24px;
 
   transition: var(--transition-color), var(--transition-bg-color),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .radio-btn:hover,
